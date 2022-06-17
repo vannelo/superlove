@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -45,6 +46,19 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WG0Q718YRG"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'G-WG0Q718YRG');
+        `}
+      </Script>
 
       <main className={styles.main}>
         <div className={styles.space} />
