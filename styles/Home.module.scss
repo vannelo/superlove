@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+.main {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+.timer {
+  font-family: "Syne Mono", monospace;
+}
+.social {
+  margin: 40px 0;
+}
+.social a {
+  padding: 5px;
+}
+.social svg {
+  fill: white;
+}
+.space {
+  height: 30vh;
+}
+.text {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  font-family: "Syne Mono", monospace;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  &:before,
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    margin: inherit;
+    color: inherit;
+  }
+  &:before {
+    transform: skewX(6deg);
+    animation: textNoise1 1.2s infinite linear alternate both;
+    text-shadow: -3px 0 #32fff8;
+  }
+  &:after {
+    transform: skewX(-6deg);
+    animation: textNoise2 1.2s infinite linear alternate both;
+    text-shadow: 3px 0 #ff38ff;
+  }
+}
+
+$noise-steps: 10;
+@mixin randomNoise($name) {
+  @keyframes #{$name} {
+    @for $i from 0 through $noise-steps {
+      #{percentage($i/$noise-steps)} {
+        clip-path: inset(#{random(100) * 1%} 0 #{random(100) * 1%} 0);
+      }
+    }
+  }
+}
+@include randomNoise(textNoise1);
+@include randomNoise(textNoise2);
+
+@media (max-width: 1000px) {
+  .space {
+    height: 10vh;
+  }
+}
