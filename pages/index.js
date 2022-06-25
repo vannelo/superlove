@@ -66,7 +66,7 @@ export default function Home() {
           <p id="demo" className={styles.timer}></p>
         </div>
         <div className={styles.video}>
-          <video muted autoPlay loop tyle={{ width: "100%" }}>
+          <video muted autoPlay loop style={{ width: "100%" }}>
             <source src="video.mp4" type="video/mp4" />
           </video>
         </div>
