@@ -65,6 +65,11 @@ export default function Home() {
         <div className={styles.timer}>
           <p id="demo" className={styles.timer}></p>
         </div>
+        <div className={styles.video}>
+          <video width="100%" muted autoPlay="true" loop="true">
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div
           className={styles.text}
           data-text="01100101 01110011 00100000 01110000 01101111 01110010 00100000 01110100
