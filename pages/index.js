@@ -36,15 +36,36 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
-          01110011 01110101 01110000 01100101 01110010 01101100 01101111
-          01110110 01100101
-        </title>
+        <title>Superlove</title>
         <meta
           name="description"
           content="01110011 01110101 01110000 01100101 01110010 01101100 01101111 01110110 01100101"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="keywords"
+          content="superlove, super love, grupo, banda, rock, pop, electronico, mexico"
+        />
+        <meta name="author" content="Vannelo - https://www.vannelo.com" />
+        <meta name="copyright" content="Vannelo - https://www.vannelo.com" />
+        <meta property="og:title" content="Superlove" />
+        <meta
+          property="og:description"
+          content="01110011 01110101 01110000 01100101 01110010 01101100 01101111 01110110 01100101"
+        />
+        <meta property="og:url" content="https://superlove.xyz" />
+        <meta
+          property="og:image"
+          content="https://superlove.xyz/img/meta.jpg"
+        />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://superlove.xyz/img/meta.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/img/icon.jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-WG0Q718YRG"
