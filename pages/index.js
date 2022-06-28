@@ -100,7 +100,7 @@ export default function Home() {
           01110100 01101001
         </div>
         <div className={styles.social}>
-          <a href="http://instagram.com/superlove.exe" target="blank">
+          <a href="http://instagram.com/superlovelove" target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30px"
