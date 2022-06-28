@@ -55,12 +55,12 @@ export default function Home() {
         <meta property="og:url" content="https://superlove.xyz" />
         <meta
           property="og:image"
-          content="https://superlove.xyz/img/meta.jpg"
+          content="https://superlove.xyz/img/meta2.jpg"
         />
         <meta
           name="image"
           property="og:image"
-          content="https://superlove.xyz/img/meta.jpg"
+          content="https://superlove.xyz/img/meta2.jpg"
         />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/img/icon.jpg" />
