@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
 .video {
-  width: 30%;
+  width: 10%;
   margin: auto;
 }
 .main {
@@ -55,6 +55,11 @@
     text-shadow: 3px 0 #ff38ff;
   }
 }
+.youtube {
+  width: 600px;
+  background-color: #ff38ff;
+  margin: 20px auto;
+}
 
 $noise-steps: 10;
 @mixin randomNoise($name) {
@@ -74,10 +79,15 @@ $noise-steps: 10;
     height: 10vh;
   }
   .video {
-    width: 100%;
+    width: 30%;
     margin: auto;
   }
   .text {
     font-size: 12px;
+  }
+  .youtube {
+    width: 90%;
+    background-color: #ff38ff;
+    margin: 20px auto;
   }
 }
